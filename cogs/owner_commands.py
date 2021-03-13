@@ -23,14 +23,7 @@ class Owner(commands.Cog):
                       description=f"For debugging a specific command. Only usable by owner. ({owner})")
     async def debug(self, ctx):
         if str(ctx.author) == owner:
-            await ctx.send("```"
-                           "     _______               ___________             _______________      \n"
-                           "     ___    |______ ______ __  /___  /_______ _    ___    |___  _/      \n"
-                           "     __  /| |_  __ `/  __ `/  __/_  __ \  __ `/    __  /| |__  /        \n"
-                           "     _  ___ |  /_/ // /_/ // /_ _  / / / /_/ /     _  ___ |_/ /         \n"
-                           "     /_/  |_|\__, / \__,_/ \__/ /_/ /_/\__,_/      /_/  |_/___/         \n"
-                           "            /____/                                                      \n"
-                           "                                 - The world is your oyster            ```")
+            pass
             
 
 def setup(bot):
